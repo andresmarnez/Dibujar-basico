@@ -485,6 +485,8 @@ namespace Dibujar
             // 
             this.tspbDemostracion.Name = "tspbDemostracion";
             this.tspbDemostracion.Size = new System.Drawing.Size(100, 18);
+            this.tspbDemostracion.Step = 5;
+            this.tspbDemostracion.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             // 
             // btAplicar
             // 
@@ -537,7 +539,17 @@ namespace Dibujar
             // 
             // dlgAbrirDibujo
             // 
-            this.dlgAbrirDibujo.FileName = "openFileDialog1";
+            this.dlgAbrirDibujo.AutoUpgradeEnabled = false;
+            this.dlgAbrirDibujo.DefaultExt = "png";
+            this.dlgAbrirDibujo.Filter = "(.bmp)|*.bmp|(.jpg)|*.jpg";
+            this.dlgAbrirDibujo.Title = "Abrir archivo";
+            // 
+            // dlgGuardarDibujo
+            // 
+            this.dlgGuardarDibujo.AutoUpgradeEnabled = false;
+            this.dlgGuardarDibujo.DefaultExt = "png";
+            this.dlgGuardarDibujo.Filter = "(.bmp)|*.bmp|(.jpg)|*.jpg";
+            this.dlgGuardarDibujo.Title = "Guardar archivo";
             // 
             // fmDibujo
             // 
